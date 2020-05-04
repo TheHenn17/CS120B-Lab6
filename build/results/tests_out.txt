@@ -1,7 +1,7 @@
-Breakpoint 1 at 0x33e: file source/main.c, line 105.
+Breakpoint 1 at 0x4a2: file source/main.c, line 146.
 Note: automatically using hardware breakpoints for read-only addresses.
 ======================================================
 Running all tests..."
 
-"Follows Sequence"..."Correct Stop On PB2, game begins even while button held"..."Correct Stop On PB1, Long press to stop"...======================================================
+"9-->0 holding"..."0-->9 holding"..."9-->5 clicking, reset, 0-->5 clicking"..."going over under"...======================================================
 Remote doesn't know how to detach
