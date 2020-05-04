@@ -29,32 +29,32 @@ echo Running all tests..."\n\n
 test "Follows Sequence"
 setPINA 0x00
 expectPORTB 0x00
-continue 1
+timeContinue 1
 expectPORTB 0x01
-continue 1
+timeContinue 1
 expectPORTB 0x02
-continue 1
+timeContinue 1
 expectPORTB 0x04
-continue 1
+timeContinue 1
 expectPORTB 0x01
-continue 1
+timeContinue 1
 expectPORTB 0x02
-continue 1
+timeContinue 1
 expectPORTB 0x04
 checkResult
 
 test "Buttons dont interfere"
 setPINA 0xFF
-continue 1
+timeContinue 1
 expectPORTB 0x01
 setPINA 0xFE
-continue 2
+timeContinue 2
 expectPORTB 0x04
 setPINA 0xF2
-continue 1
+timeContinue 1
 expectPORTB 0x01
 setPINA 0xF0
-continue 3
+timeContinue 3
 expectPORTB 0x01
 checkResult
 

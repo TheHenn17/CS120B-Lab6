@@ -7,6 +7,19 @@
 #   printDDRx
 #   printPORTx f OR printPINx f 
 
+define timeContinue
+	if $argc > 0
+		set $i = $arg0
+	else
+		set $i = 1
+	end
+	while $i > 0
+		set TimerFlag = 1
+		continue
+		set $i = $i - 1
+	end
+end
+
 #   printPINx f 
 #       With x as the port or pin (A,B,C,D)
 #       With f as a format option which can be: [d] decimal, [x] hexadecmial (default), [t] binary 

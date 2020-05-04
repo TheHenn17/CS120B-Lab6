@@ -29,19 +29,19 @@ echo Running all tests..."\n\n
 test "Follows Sequence"
 setPINA 0xFF
 expectPORTB 0x00
-continue 1
+timeContinue 1
 expectPORTB 0x01
-continue 1
+timeContinue 1
 expectPORTB 0x02
-continue 1
+timecontinue 1
 expectPORTB 0x04
-continue 1
+timeContinue 1
 expectPORTB 0x02
-continue 1
+timeContinue 1
 expectPORTB 0x01
-continue 1
+timeContinue 1
 expectPORTB 0x02
-continue 1
+timeContinue 1
 expectPORTB 0x04
 checkResult
 
@@ -49,22 +49,22 @@ test "Correct Stop On PB2, game begins even while button held"
 setPINA 0xFF
 expectPORTB 0x04
 setPINA 0xFE
-continue 1
+timeContinue 1
 expectPORTB 0x04
 expect state Wait
 setPINA 0xFF
-continue 1
+timeContinue 1
 expectPORTB 0x04
 expect state Stop
 setPINA 0xFE
-continue 1
+timeContinue 1
 expectPORTB 0x01
 expect state Game
-continue 1
+timeContinue 1
 expectPORTB 0x02
 expect state Game
 setPINA 0xFF
-continue 1
+timeContinue 1
 expectPORTB 0x04
 expect state Game
 checkResult
@@ -72,18 +72,18 @@ checkResult
 test "Correct Stop On PB1, Long press to stop"
 setPINA 0xFF
 expectPORTB 0x04
-continue 1
+timeContinue 1
 expectPORTB 0x02
 expect state Game
 setPINA 0xFE
-continue 1
+timeContinue 1
 expectPORTB 0x02
 expect state Wait
-continue 3
+timeContinue 3
 expectPORTB 0x02
 expect state Wait
 setPINA 0xFF
-continue 1
+timeContinue 1
 expectPORTB 0x02
 expect state Stop
 checkResult
