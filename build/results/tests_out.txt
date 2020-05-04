@@ -1,0 +1,7 @@
+Breakpoint 1 at 0x2b6: file source/main.c, line 89.
+Note: automatically using hardware breakpoints for read-only addresses.
+======================================================
+Running all tests..."
+
+"Follows Sequence"..."Buttons dont interfere"...======================================================
+Remote doesn't know how to detach
